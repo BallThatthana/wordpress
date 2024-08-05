@@ -37,8 +37,8 @@ services:
     image: caddy:alpine
     container_name: webserver
     ports:
-      - 80:80
-      - 8443:443
+    - "8080:80" 
+    - "8443:443"
     volumes:
       - ./wordpress:/var/www/html
       - ./caddy_data:/data
